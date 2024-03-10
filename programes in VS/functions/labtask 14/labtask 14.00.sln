@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class person {
+private: 
+	int name;
+	int age;
+public:
+	void txtinfo(int n, int a)
+	{
+		name = n;
+		age = a;
+
+	}
+};
+class person : private student {
+private:
+	int Regno;
+	int semester;
+public:
+	void dgtinfo(int r, int s)
+	{
+		Regno = r;
+		semester = s;
+	}
+};
+int main()
+{
+	student std1;
+	std1.name();
+
+}
